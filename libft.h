@@ -6,7 +6,7 @@
 /*   By: ikozhina <ikozhina@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 12:52:00 by ikozhina          #+#    #+#             */
-/*   Updated: 2024/11/22 13:06:11 by ikozhina         ###   ########.fr       */
+/*   Updated: 2024/11/23 10:43:51 by ikozhina         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,5 +63,6 @@ void	ft_lstadd_back(t_list **lst, t_list *new);
 void	ft_lstdelone(t_list *lst, void (*del)(void *));
 void	ft_lstadd_front(t_list **lst, t_list *new);
 int		ft_lstsize(t_list *lst);
+void 	ft_lstclear(t_list **lst, void (*del)(void *));
 
 #endif
