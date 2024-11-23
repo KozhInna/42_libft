@@ -6,7 +6,7 @@
 /*   By: ikozhina <ikozhina@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 12:11:26 by ikozhina          #+#    #+#             */
-/*   Updated: 2024/11/22 10:04:25 by ikozhina         ###   ########.fr       */
+/*   Updated: 2024/11/23 10:38:44 by ikozhina         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,10 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	if (!lst || !new)
 		return ;
 	if (*lst == NULL)
+	{
 		*lst = new;
+		return (NULL);
+	}
 	while (pnt->next != NULL)
 		pnt = pnt->next;
 	pnt->next = new;
